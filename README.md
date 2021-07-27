@@ -1,2 +1,2 @@
-# portfolio
-Simple personal portfolio website project.
+# Portfolio
+Simple web personal portfolio project.
