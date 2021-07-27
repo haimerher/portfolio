@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { color: #3B4856; font-size: 16px; font-family: 'Open Sans', sans-serif; line-height: 1.8; }
+
+h1, h2, h3, h4, h5, h6 { color: #182D3F; margin-top: 0; }
+
+main { overflow-x: hidden; }
+
+.container { margin: 0 auto; max-width: 1300px; padding: 0 20px; width: 80%; }
+
+#navbar { background-color: #FFF; border-bottom: 1px solid rgba(0, 0, 0, 0.03); left: 0; line-height: normal; padding: 20px 0; position: fixed; top: 0; width: 100%; z-index: 1; }
+#navbar ul { list-style: none; margin: 0; padding: 0; text-align: right; }
+#navbar li { display: inline-block; margin-right: 26px; }
+#navbar li:last-child { margin-right: 0; }
+#navbar .nav-link { color: #182D3F; text-decoration: none; }
+
+section { padding: 50px 0; }
+
+.grid-layout { display: grid; }
+.grid-layout.main { grid-template-columns: 40% 60%; }
+.grid-layout.project { grid-template-columns: repeat(4, 1fr); gap: 26px 26px; }
+
+.title-sect { margin-bottom: 46px; text-align: center; }
+.title-sect h2 { font-size: 28px; margin-bottom: 0; }
+
+.highlight { color: #009BF9; }
+
+#welcome-section { background-image: url("../img/background.png"); background-repeat: no-repeat; background-size: cover; height: 100vh; padding: 0; position: relative; }
+#welcome-section .grid-layout { height: 100%; }
+#welcome-section .grid-layout > div { height: 100%; position: relative; }
+#welcome-section .about .cont, #welcome-section .profile-pic .pic { position: absolute; top: 50%; transform: translateY(-50%); }
+#welcome-section .about .cont { left: 0; }
+#welcome-section .about h1 { font-size: 60px; line-height: normal; margin: 0; }
+#welcome-section .about p { font-size: 22px; }
+#welcome-section .contact-buttons { margin-top: 40px; }
+#welcome-section .social-link { background-color: #182D3F; border-radius: 50%; color: #FFF; display: inline-block; font-size: 20px; height: 46px; line-height: 47px; margin-right: 10px; text-align: center; text-decoration: none; transition: ease-in-out background-color .3s; width: 46px; }
+#welcome-section .social-link:hover { background-color: #009BF9; }
+#welcome-section .hirebtn { background-color: #009BF9; border-radius: 30px; color: #FFF; display: inline-block; margin-left: 30px; padding: 12px 40px; text-decoration: none; transition: ease-in-out opacity .3s; }
+#welcome-section .hirebtn:hover { opacity: .8; }
+#welcome-section .profile-pic .pic { border-radius: 50% 0 50% 50%; height: 480px; overflow: hidden; right: 0; width: 460px; }
+#welcome-section .profile-pic img { max-width: 100%; position: relative; top: -20px; }
+#welcome-section .go-down-btn { bottom: 20px; left: 0; position: absolute; text-align: center; width: 100%; }
+#welcome-section .go-down-btn a { color: #182D3F; font-size: 2em; text-decoration: none; }
+
+#projects { background-color: #efefef; }
+#projects .box { background-color: #FFF; border-radius: 4px; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07); }
+#projects .box a { text-decoration: none; }
+#projects .box a:hover .thumbnail { filter: grayscale(0); }
+#projects .box a:hover .thumbnail::after { opacity: 1; }
+#projects .box a:hover h4 { color: #009BF9; }
+#projects .box .thumbnail { border-radius: 4px 4px 0 0; filter: grayscale(90%); max-height: 170.84px; overflow: hidden; position: relative; width: 100%; }
+#projects .box .thumbnail::before { content: ''; background-color: rgba(24, 45, 63, 0.5); height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+#projects .box .thumbnail::after { content: 'View project'; background-color: #009BF9; border-radius: 30px; color: #FFF; left: 50%; font-size: 14px; opacity: 0; padding: 8px 16px; position: absolute; text-align: center; top: 50%; transform: translate(-50%, -50%); transition: opacity ease-in-out .3s; width: 60%; }
+#projects .box .thumbnail img { display: block; width: 100%; }
+#projects .box h4 { color: #3B4856; font-weight: 400; margin: 0; padding: 14px 20px; transition: color ease-in-out .3s; text-align: center; }
+
+#contact { position: relative; }
+#contact .grid-layout .column:last-of-type { padding-left: 80px; }
+#contact .main-cap { padding-top: 34px; }
+#contact .main-cap h1 { font-size: 46px; margin: 0; }
+#contact .main-cap h2 { font-size: 32px; font-weight: normal; line-height: normal; }
+#contact .main-cap .highlight { font-weight: 600; }
+#contact header h2 { color: #FFF; }
+#contact .form-field { margin-bottom: 20px; }
+#contact .form-field:last-of-type { margin-bottom: 0; }
+#contact .caption { color: #182D3F; display: block; font-weight: bold; margin-bottom: 4px; }
+#contact .inp, #contact .textarea { border: 1px solid #CCC; border-radius: 4px; width: 100%; }
+#contact .inp:focus, #contact .textarea:focus { border-color: #182D3F; }
+#contact .inp { height: 54px; padding: 0 14px; }
+#contact .textarea { height: 100px; padding: 14px; }
+#contact .primary-btn { background-color: #009BF9; border: 0; border-radius: 30px; cursor: pointer; color: #FFF; padding: 20px 46px; transition: opacity .3s ease-in-out; }
+#contact .primary-btn:hover { opacity: .8; }
+
+@media (max-width: 1180) { #welcome-section .profile-pic .pic { height: 410px; width: 430px; }
+  #welcome-section .hirebtn { margin-left: 0; } }
+@media (max-width: 1024px) { .container { width: 90%; }
+  #welcome-section .about h1 { font-size: 52px; }
+  #welcome-section .hirebtn { margin: 20px 0 0 0; } }
+@media (max-width: 768px) { .container { width: 100%; }
+  #welcome-section { background: transparent; height: auto; padding: 80px 0 40px; }
+  #welcome-section .grid-layout { display: block; }
+  #welcome-section .grid-layout > div { width: 100%; }
+  #welcome-section .about .cont, #welcome-section .profile-pic .pic { position: relative; top: 0; transform: none; }
+  #welcome-section .profile-pic { margin-top: 40px; }
+  #welcome-section .profile-pic .pic { border-radius: 0; height: 450px; margin: 0 auto; width: 90%; }
+  #welcome-section .profile-pic img { top: -40px; }
+  #welcome-section .about h1 { font-size: 36px; }
+  #welcome-section .about p { font-size: 18px; }
+  #welcome-section .go-down-btn { display: none; }
+  .grid-layout.project { grid-template-columns: 100%; }
+  .grid-layout.project .thumbnail { filter: grayscale(0) !important; max-height: initial !important; }
+  .grid-layout.project .thumbnail::before { opacity: .2; }
+  #contact .grid-layout { display: block; }
+  #contact .grid-layout .column:last-of-type { margin-top: 30px; padding-left: 0; }
+  #contact #contact-form { margin-bottom: 360px; }
+  #contact #contact-image { bottom: 0; left: 50%; position: absolute; transform: translateX(-50%); width: 70%; } }
+@media (max-width: 480px) { #welcome-section::before, #welcome-section::after { display: none; }
+  #welcome-section .profile-pic .pic { height: 300px; width: 100%; }
+  #welcome-section .profile-pic img { top: -20px; }
+  #contact #contact-form { margin-bottom: 200px; } }
+
+/*# sourceMappingURL=style.css.map */
