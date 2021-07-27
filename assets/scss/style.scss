@@ -77,7 +77,7 @@ section { padding: 50px 0; }
 
 .highlight { color: $primary; }
 
-#welcome-section { 
+#about-me { 
     background: {
         image: url('../img/background.png');
         repeat: no-repeat;
@@ -334,7 +334,7 @@ section { padding: 50px 0; }
 
 // mediaqueries
 @media (max-width: 1180) { 
-    #welcome-section {
+    #about-me {
         .profile-pic .pic { height: 410px; width: 430px; }
 
         .hirebtn { margin-left: 0; }
@@ -344,7 +344,7 @@ section { padding: 50px 0; }
 @media (max-width: 1024px) { 
     .container { width: 90%; } 
 
-    #welcome-section {
+    #about-me {
         .about h1 { font-size: 52px; }
 
         .hirebtn { margin: 20px 0 0 0;  }
@@ -356,7 +356,7 @@ section { padding: 50px 0; }
 @media (max-width: 768px) {
     .container { width: 100% }
 
-    #welcome-section { 
+    #about-me { 
         background: transparent;
         height: auto; 
         padding: 80px 0 40px;
@@ -426,7 +426,7 @@ section { padding: 50px 0; }
 }
 
 @media (max-width: 480px) {
-    #welcome-section {
+    #about-me {
         &::before, &::after { display: none; }
 
         .profile-pic {

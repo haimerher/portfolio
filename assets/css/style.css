@@ -28,22 +28,22 @@ section { padding: 50px 0; }
 
 .highlight { color: #009BF9; }
 
-#welcome-section { background-image: url("../img/background.png"); background-repeat: no-repeat; background-size: cover; height: 100vh; padding: 0; position: relative; }
-#welcome-section .grid-layout { height: 100%; }
-#welcome-section .grid-layout > div { height: 100%; position: relative; }
-#welcome-section .about .cont, #welcome-section .profile-pic .pic { position: absolute; top: 50%; transform: translateY(-50%); }
-#welcome-section .about .cont { left: 0; }
-#welcome-section .about h1 { font-size: 60px; line-height: normal; margin: 0; }
-#welcome-section .about p { font-size: 22px; }
-#welcome-section .contact-buttons { margin-top: 40px; }
-#welcome-section .social-link { background-color: #182D3F; border-radius: 50%; color: #FFF; display: inline-block; font-size: 20px; height: 46px; line-height: 47px; margin-right: 10px; text-align: center; text-decoration: none; transition: ease-in-out background-color .3s; width: 46px; }
-#welcome-section .social-link:hover { background-color: #009BF9; }
-#welcome-section .hirebtn { background-color: #009BF9; border-radius: 30px; color: #FFF; display: inline-block; margin-left: 30px; padding: 12px 40px; text-decoration: none; transition: ease-in-out opacity .3s; }
-#welcome-section .hirebtn:hover { opacity: .8; }
-#welcome-section .profile-pic .pic { border-radius: 50% 0 50% 50%; height: 480px; overflow: hidden; right: 0; width: 460px; }
-#welcome-section .profile-pic img { max-width: 100%; position: relative; top: -20px; }
-#welcome-section .go-down-btn { bottom: 20px; left: 0; position: absolute; text-align: center; width: 100%; }
-#welcome-section .go-down-btn a { color: #182D3F; font-size: 2em; text-decoration: none; }
+#about-me { background-image: url("../img/background.png"); background-repeat: no-repeat; background-size: cover; height: 100vh; padding: 0; position: relative; }
+#about-me .grid-layout { height: 100%; }
+#about-me .grid-layout > div { height: 100%; position: relative; }
+#about-me .about .cont, #about-me .profile-pic .pic { position: absolute; top: 50%; transform: translateY(-50%); }
+#about-me .about .cont { left: 0; }
+#about-me .about h1 { font-size: 60px; line-height: normal; margin: 0; }
+#about-me .about p { font-size: 22px; }
+#about-me .contact-buttons { margin-top: 40px; }
+#about-me .social-link { background-color: #182D3F; border-radius: 50%; color: #FFF; display: inline-block; font-size: 20px; height: 46px; line-height: 47px; margin-right: 10px; text-align: center; text-decoration: none; transition: ease-in-out background-color .3s; width: 46px; }
+#about-me .social-link:hover { background-color: #009BF9; }
+#about-me .hirebtn { background-color: #009BF9; border-radius: 30px; color: #FFF; display: inline-block; margin-left: 30px; padding: 12px 40px; text-decoration: none; transition: ease-in-out opacity .3s; }
+#about-me .hirebtn:hover { opacity: .8; }
+#about-me .profile-pic .pic { border-radius: 50% 0 50% 50%; height: 480px; overflow: hidden; right: 0; width: 460px; }
+#about-me .profile-pic img { max-width: 100%; position: relative; top: -20px; }
+#about-me .go-down-btn { bottom: 20px; left: 0; position: absolute; text-align: center; width: 100%; }
+#about-me .go-down-btn a { color: #182D3F; font-size: 2em; text-decoration: none; }
 
 #projects { background-color: #efefef; }
 #projects .box { background-color: #FFF; border-radius: 4px; box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07); }
@@ -74,22 +74,22 @@ section { padding: 50px 0; }
 #contact .primary-btn { background-color: #009BF9; border: 0; border-radius: 30px; cursor: pointer; color: #FFF; padding: 20px 46px; transition: opacity .3s ease-in-out; }
 #contact .primary-btn:hover { opacity: .8; }
 
-@media (max-width: 1180) { #welcome-section .profile-pic .pic { height: 410px; width: 430px; }
-  #welcome-section .hirebtn { margin-left: 0; } }
+@media (max-width: 1180) { #about-me .profile-pic .pic { height: 410px; width: 430px; }
+  #about-me .hirebtn { margin-left: 0; } }
 @media (max-width: 1024px) { .container { width: 90%; }
-  #welcome-section .about h1 { font-size: 52px; }
-  #welcome-section .hirebtn { margin: 20px 0 0 0; } }
+  #about-me .about h1 { font-size: 52px; }
+  #about-me .hirebtn { margin: 20px 0 0 0; } }
 @media (max-width: 768px) { .container { width: 100%; }
-  #welcome-section { background: transparent; height: auto; padding: 80px 0 40px; }
-  #welcome-section .grid-layout { display: block; }
-  #welcome-section .grid-layout > div { width: 100%; }
-  #welcome-section .about .cont, #welcome-section .profile-pic .pic { position: relative; top: 0; transform: none; }
-  #welcome-section .profile-pic { margin-top: 40px; }
-  #welcome-section .profile-pic .pic { border-radius: 0; height: 450px; margin: 0 auto; width: 90%; }
-  #welcome-section .profile-pic img { top: -40px; }
-  #welcome-section .about h1 { font-size: 36px; }
-  #welcome-section .about p { font-size: 18px; }
-  #welcome-section .go-down-btn { display: none; }
+  #about-me { background: transparent; height: auto; padding: 80px 0 40px; }
+  #about-me .grid-layout { display: block; }
+  #about-me .grid-layout > div { width: 100%; }
+  #about-me .about .cont, #about-me .profile-pic .pic { position: relative; top: 0; transform: none; }
+  #about-me .profile-pic { margin-top: 40px; }
+  #about-me .profile-pic .pic { border-radius: 0; height: 450px; margin: 0 auto; width: 90%; }
+  #about-me .profile-pic img { top: -40px; }
+  #about-me .about h1 { font-size: 36px; }
+  #about-me .about p { font-size: 18px; }
+  #about-me .go-down-btn { display: none; }
   .grid-layout.project { grid-template-columns: 100%; }
   .grid-layout.project .thumbnail { filter: grayscale(0) !important; max-height: initial !important; }
   .grid-layout.project .thumbnail::before { opacity: .2; }
@@ -97,9 +97,9 @@ section { padding: 50px 0; }
   #contact .grid-layout .column:last-of-type { margin-top: 30px; padding-left: 0; }
   #contact #contact-form { margin-bottom: 360px; }
   #contact #contact-image { bottom: 0; left: 50%; position: absolute; transform: translateX(-50%); width: 70%; } }
-@media (max-width: 480px) { #welcome-section::before, #welcome-section::after { display: none; }
-  #welcome-section .profile-pic .pic { height: 300px; width: 100%; }
-  #welcome-section .profile-pic img { top: -20px; }
+@media (max-width: 480px) { #about-me::before, #about-me::after { display: none; }
+  #about-me .profile-pic .pic { height: 300px; width: 100%; }
+  #about-me .profile-pic img { top: -20px; }
   #contact #contact-form { margin-bottom: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
