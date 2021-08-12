@@ -57,7 +57,7 @@
                 </header>
                 <div class="grid-layout project">
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/1225747-100-days-daily-ui">
+                        <a href="https://www.domestika.org/es/projects/1225747-100-days-daily-ui" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/daily.jpg" alt="">
                             </div>
@@ -65,7 +65,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/1225742-music-app-concept">
+                        <a href="https://www.domestika.org/es/projects/1225742-music-app-concept" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/player.jpg" alt="">
                             </div>
@@ -73,7 +73,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/1180716-sisalril-app">
+                        <a href="https://www.domestika.org/es/projects/1180716-sisalril-app" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/app_sisa.jpg" alt="">
                             </div>
@@ -81,7 +81,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/379667-phalcon">
+                        <a href="https://www.domestika.org/es/projects/379667-phalcon" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/phalcon.jpg" alt="">
                             </div>
@@ -89,7 +89,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/379672-mcanime">
+                        <a href="https://www.domestika.org/es/projects/379672-mcanime" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/mcanime.jpg" alt="">
                             </div>
@@ -97,13 +97,16 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="https://www.domestika.org/es/projects/212791-naruho-do">
+                        <a href="https://www.domestika.org/es/projects/212791-naruho-do" target="_blank">
                             <div class="thumbnail">
                                 <img src="assets/img/projects/thumb/naruhodo.jpg" alt="">
                             </div>
                             <h4 class="project-tile">Naruho.do</h4>
                         </a>
                     </div>
+                </div>
+                <div class="seeall">
+                    <a href="https://www.domestika.org/es/hairo_mh/portfolio" class="btns accent-btn">View All <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </section>
@@ -119,7 +122,7 @@
                     </div>
                     <div class="column">
                         <h2>Send me a message</h2>
-                        <form action="" id="contact-form">
+                        <form action="https://formspree.io/f/mrgrogyo" method="POST" id="contact-form">
                             <div class="form-field">
                                 <label for="name" class="caption">Name:</label>
                                 <input type="text" name="name" id="name" class="inp" placeholder="Enter your name" required>
@@ -130,14 +133,14 @@
                             </div>
                             <div class="form-field">
                                 <label for="mail" class="caption">Phone (optional):</label>
-                                <input type="tel" name="phone" id="phone" class="inp" placeholder="Enter your phone contact" required>
+                                <input type="tel" name="phone" id="phone" class="inp" placeholder="Enter your phone contact">
                             </div>
                             <div class="form-field">
                                 <label for="reason" class="caption">How can I help you?:</label>
-                                <textarea name="reason" id="reason" class="textarea"></textarea>
+                                <textarea name="reason" id="reason" class="textarea" required></textarea>
                             </div>
                             <div class="form-field button">
-                                <button type="submit" class="primary-btn">Enviar</button>
+                                <button type="submit" class="btns primary-btn" id="scfrm">Enviar</button>
                             </div>
                         </form>
                     </div> 
@@ -145,5 +148,9 @@
             </div>
         </section>
     </main>
+
+    <!-- scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
